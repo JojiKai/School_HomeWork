@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>21點遊戲</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>21點遊戲</h1>
+
+      <div class="status">
+        <p>目前籌碼：<span id="player-chips">1000</span></p>
+        <p>當前下注：<span id="current-bet">0</span></p>
+      </div>
+
+      <div class="controls">
+        <button id="bet-50">下注 50</button>
+        <button id="bet-100">下注 100</button>
+        <button id="deal-button" disabled>發牌</button>
+      </div>
+
+      <div class="cards">
+        <div class="dealer">
+          <h2>莊家</h2>
+          <div id="dealer-cards" class="card-container"></div>
+          <p>點數：<span id="dealer-score">0</span></p>
+        </div>
+        <div class="player">
+          <h2>玩家</h2>
+          <div id="player-cards" class="card-container"></div>
+          <p>點數：<span id="player-score">0</span></p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="hit-button" disabled>要牌</button>
+        <button id="stand-button" disabled>停牌</button>
+      </div>
+
+      <div class="result">
+        <p id="result-text">請下注開始遊戲！</p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
